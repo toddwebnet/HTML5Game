@@ -11,6 +11,15 @@
 "use strict";
 var DebugMode = true;
 
+var constants = new Constants();
+var eventListeners = new EventListeners();
+var keys = new Keys(constants);
+
+setInterval(function(){
+   Game()
+}, 1000);
+
+
 var traceCount = 0;
 function trace(traceDescr) {
     var traceMax = 999999;
@@ -27,12 +36,7 @@ function numPad(num, size) {
     return s;
 }
 
-var constants = new Constants();
-var eventListeners = new EventListeners();
-var keys = new Keys(constants);
-setInterval(function(){
-   Game()
-}, 1000);
+
 
 function Game()
 {
