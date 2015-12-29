@@ -21,9 +21,9 @@ Keys.prototype.initialize = function (constants)
         "MOVE_UP": [constants.keyCode.UP, constants.keyCode.W],
         "MOVE_LEFT": [constants.keyCode.LEFT, constants.keyCode.A],
         "MOVE_DOWN": [constants.keyCode.DOWN, constants.keyCode.S],
-        "MOVE_RIGHT": [constants.keyCode.RIGHT, constants.keyCode.D]
+        "MOVE_RIGHT": [constants.keyCode.RIGHT, constants.keyCode.D],
+        "FAST_SPEED": [constants.keyCode.SHIFT]
     };
-    console.log(this.keyActions);
 }
 
 Keys.prototype.GetCurrentAction = function (activeKeys)

@@ -42,7 +42,9 @@ function update()
 }
 
 function render()
-{}
+{
+    context.fillRect(player.x, player.y, player.height, player.width);
+}
 
 setInterval(function(){
     game();
